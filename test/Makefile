@@ -23,4 +23,4 @@ gdb:
 
 .PHONY: clean
 clean:
-	rm -rf *.o *.elf *.bin *.s *.bmp a.out
+	rm -rf *.o *.elf *.bin *.out
