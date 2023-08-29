@@ -43,7 +43,8 @@ RUN apt-get install --no-install-recommends -y \
   binutils-riscv64-linux-gnu \
   qemu-system-riscv32 \
   zsh \
-  xxd
+  xxd \
+  strace
 
 # user specific configuration
 USER $USER_NAME
