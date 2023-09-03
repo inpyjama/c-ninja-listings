@@ -44,7 +44,10 @@ RUN apt-get install --no-install-recommends -y \
   qemu-system-riscv32 \
   zsh \
   xxd \
-  strace
+  strace \
+  man
+
+RUN yes | unminimize
 
 # user specific configuration
 USER $USER_NAME
