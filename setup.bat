@@ -1,19 +1,19 @@
 
 @REM Copyright © 2023 inpyjama.com. All Rights Reserved.
 @REM Author: Rajat Batra <rajat@inpyjama.com>
-
+@echo off
 
 set -e
 
 echo "#1: Flushing docker cache"
-docker builder prune
+docker builder prune -a -f
 
 echo "#2: Build a linux base image"
 docker build -t c-ninja-linux_base .
 
 echo "#3: Mapping current host directory to guest's ~/Documents/ directory"
 
-docker run -h "c-ninja-linux" -t -d -P -v %cd%:/home/c-ninja/Documents/ --name c-ninja-linux c-ninja-linux_base
+docker run -h "c-ninja-linux" -t -d -P -v "%cd%":/home/c-ninja/Documents/ --name c-ninja-linux c-ninja-linux_base
 
 echo "#4: Setting zsh as the default terminal on guest"
 
