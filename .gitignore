@@ -5,3 +5,4 @@
 *.out
 *.o
 ch-directives-and-generated-assembly/*.s
+c-ninja.bat
