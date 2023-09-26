@@ -20,6 +20,8 @@ echo "#4: Setting zsh as the default terminal on guest"
 docker exec -it c-ninja-linux sh -c "echo \"c\" | sudo -S usermod -s /usr/bin/zsh c-ninja"
 
 echo "#5: Populating the .bashrc file of the host with c-ninja alias"
-echo  docker exec -it c-ninja-linux /bin/zsh -c "touch ~/.zshrc; cd /home/c-ninja/Documents; zsh -i" >> c-ninja.bat
+echo  echo off > c-ninja.bat
+echo  docker start c-ninja-linux >> c-ninja.bat
+echo  docker exec -it c-ninja-linux /bin/zsh -c "cd /home/c-ninja/Documents; zsh -i" >> c-ninja.bat
 
 echo "Setup Complete! Run the c-ninja batch file to start the container"
