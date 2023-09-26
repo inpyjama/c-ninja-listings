@@ -22,7 +22,7 @@ docker exec -it c-ninja-linux /bin/bash -c 'echo "c" | sudo -S usermod -s /usr/b
 USER_SHELL=bash
 
 echo "#5: Populating the .bashrc file of the host with c-ninja alias"
-echo alias c-ninja=\"docker exec -it c-ninja-linux /bin/zsh -c \'cd /home/c-ninja/Documents\; zsh -i\'\" >> ~/.${USER_SHELL}rc
+echo "alias c-ninja=\"docker start c-ninja-linux; docker exec -it c-ninja-linux /bin/zsh -c 'cd /home/c-ninja/Documents/; zsh -i'\"" >> ~/.${USER_SHELL}rc
 
 echo "#6: Sourcing local .bashrc file"
 source ~/.${USER_SHELL}rc
