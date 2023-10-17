@@ -66,7 +66,7 @@ xxd -e -c 4 -g 4 main.bin
 
 ## 1.2. Linux
 
-The installation of docker is descriped in detail on the official Docker website: [Docker installation on Linux](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository). We cover the steps needed to enable Docker Desktop on Ubuntu Desktop.
+The installation of docker is described in detail on the official Docker website: [Docker installation on Linux](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository). We cover the steps needed to enable Docker Desktop on Ubuntu Desktop.
 
 #### 1.2.1 Installing Docker Desktop
 
