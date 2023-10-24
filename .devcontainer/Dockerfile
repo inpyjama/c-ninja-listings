@@ -37,10 +37,5 @@ RUN sudo apt-get install --no-install-recommends -y \
 
 RUN yes | unminimize
 
-# install pygments package
-RUN pip install pygments
-
-RUN wget -P ~ https://git.io/.gdbinit
-
 # terminal colors with xterm
 ENV TERM xterm

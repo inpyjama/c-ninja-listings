@@ -1,3 +1,12 @@
 {
   "build": { "dockerfile": "Dockerfile"},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "zhwu95.riscv",
+        "ZixuanWang.linkerscript"
+      ]
+    }
+  },
+  "postCreateCommand": ["pip3 install pygments", "wget -P ~ https://git.io/.gdbinit"]
 }
