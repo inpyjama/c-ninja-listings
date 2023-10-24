@@ -3,11 +3,8 @@
 # Author: Piyush Itankar <piyush@inpyjama.com>
 #
 
-FROM ubuntu:latest
+FROM mcr.microsoft.com/vscode/devcontainers/base:ubuntu
 
-ENV USER_NAME $USER_NAME
-ENV USER_PASSWORD $USER_PASSWORD
-ENV CONTAINER_IMAGE_VER=v1.0.0
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN sudo apt-get update
