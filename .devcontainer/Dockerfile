@@ -34,9 +34,6 @@ RUN sudo apt-get install --no-install-recommends -y \
   strace \
   man
 
-RUN code --install-extension zhwu95.riscv
-RUN code --install-extension ZixuanWang.linkerscript
-
 RUN yes | unminimize
 
 # terminal colors with xterm
