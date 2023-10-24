@@ -25,6 +25,7 @@ RUN sudo apt-get install --no-install-recommends -y \
   build-essential \
   python3 \
   python3-dev \
+  python3-pip \
   binutils \
   make \
   binutils-riscv64-linux-gnu \
@@ -35,6 +36,11 @@ RUN sudo apt-get install --no-install-recommends -y \
   man
 
 RUN yes | unminimize
+
+# install pygments package
+RUN pip install pygments
+
+RUN wget -P ~ https://git.io/.gdbinit
 
 # terminal colors with xterm
 ENV TERM xterm

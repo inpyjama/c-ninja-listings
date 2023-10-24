@@ -16,5 +16,6 @@
     "editor.rulers": [
         120
     ],
-    "terminal.integrated.sendKeybindingsToShell": true
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "extensions.ignoreRecommendations": true
 }
