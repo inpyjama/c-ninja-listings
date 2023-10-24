@@ -16,4 +16,5 @@
     "editor.rulers": [
         120
     ],
+    "terminal.integrated.sendKeybindingsToShell": true
 }
