@@ -8,5 +8,5 @@
       ]
     }
   },
-  "postCreateCommand": ["pip3 install pygments", "wget -P ~ https://git.io/.gdbinit"]
+  "postCreateCommand": "pip3 install pygments && wget -P ~ https://git.io/.gdbinit"
 }

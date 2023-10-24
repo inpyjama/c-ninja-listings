@@ -5,3 +5,4 @@
 *.o
 ch-directives-and-generated-assembly/*.s
 c-ninja.bat
+**/.gdb_history
