@@ -3,12 +3,12 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "editor.fontSize": 14,
-        "terminal.integrated.fontSize": 14,
+        "editor.fontSize": 16,
+        "terminal.integrated.fontSize": 16,
         "workbench.iconTheme": "vs-seti",
         "editor.minimap.enabled": false,
-        "workbench.colorTheme": "GitHub Dark",
-        "workbench.preferredDarkColorTheme": "GitHub Dark",
+        "workbench.colorTheme": "MacOS Modern Dark - Ventura Xcode Default",
+        "workbench.preferredDarkColorTheme": "MacOS Modern Dark - Ventura Xcode Default",
         "editor.wordWrapColumn": 120,
         "workbench.startupEditor": "none",
         "editor.useTabStops": false,
@@ -16,7 +16,7 @@
         "git.autorefresh": false,
         "terminal.integrated.cursorBlinking": true,
         "terminal.integrated.cursorStyle": "line",
-        "debug.console.fontSize": 14,
+        "debug.console.fontSize": 16,
         "editor.rulers": [
             120
         ],
@@ -24,10 +24,11 @@
         "extensions.ignoreRecommendations": true
       },
       "extensions": [
-		"zhwu95.riscv",
-		"ZixuanWang.linkerscript",
-		"ms-vscode.cpptools"
-	]
+        "zhwu95.riscv",
+        "ZixuanWang.linkerscript",
+        "ms-vscode.cpptools",
+        "davidbwaters.macos-modern-theme"
+	    ]
     }
   },
   "postCreateCommand": "pip3 install pygments && wget -P ~ https://git.io/.gdbinit"
