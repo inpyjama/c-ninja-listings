@@ -22,8 +22,6 @@
         ],
         "terminal.integrated.sendKeybindingsToShell": true,
         "extensions.ignoreRecommendations": true,
-        "workbench.activityBar.visible": false,
-        "workbench.statusBar.visible": false,
         "remote.autoForwardPorts": false
       },
       "extensions": [
