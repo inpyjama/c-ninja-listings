@@ -21,7 +21,10 @@
             120
         ],
         "terminal.integrated.sendKeybindingsToShell": true,
-        "extensions.ignoreRecommendations": true
+        "extensions.ignoreRecommendations": true,
+        "workbench.activityBar.visible": false,
+        "workbench.statusBar.visible": false,
+        "remote.autoForwardPorts": false
       },
       "extensions": [
         "zhwu95.riscv",
