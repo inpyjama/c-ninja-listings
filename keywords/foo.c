@@ -1,7 +1,16 @@
 void bar() {
-    char A_char = 97;
-    int _myint = 123;
-    float float8_p = 1.0;
+    char a = 10;
+    int b = 20;
+    short c = 30;
+    short int d = 31;
 
+    long e = 32;
+    long int f = 33;
+    long long g = 34;
+    long long int h = 35;
+
+    float i = 36.37;
+    double j = 38.39;
+    
     return;
 }
