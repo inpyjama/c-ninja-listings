@@ -6,10 +6,10 @@
 FROM ubuntu:latest
 
 # PLEASE CHANGE THESE TO SUIT YOUR CONFIG
-ARG USER_NAME="guest_new"
-ARG USER_PASSWORD="ghost"
-ARG GIT_NAME="vibraniumSwaleh"
-ARG GIT_EMAIL="hus.swaleh@yahoo.com"
+ARG USER_NAME="change to your username of choice"
+ARG USER_PASSWORD="change to your password of choice"
+ARG GIT_NAME="change to your git username"
+ARG GIT_EMAIL="change to your email"
 
 ENV USER_NAME $USER_NAME
 ENV USER_PASSWORD $USER_PASSWORD
