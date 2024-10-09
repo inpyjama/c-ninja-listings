@@ -24,4 +24,4 @@ gdb:
 
 .PHONY: clean
 clean:
-	rm -rf *.o *.elf *.bin *.out .gdb_history
+	rm -rf *.o *.elf *.bin *.hex *.out .gdb_history
