@@ -13,6 +13,7 @@ GCC               = $(TOOLCHAIN_PREFIX)gcc
 all: main.s
 	$(GCC)  -O0 -ggdb -nostdlib -march=rv32i -mabi=ilp32 -Wl,-Tmain.ld main.s -o main.elf
 	$(OBJCOPY) -O binary main.elf main.bin
+	$(OBJCOPY) -O ihex main.elf main.hex
 	xxd -e -c 4 -g 4 main.bin
 
 debug:
@@ -23,4 +24,4 @@ gdb:
 
 .PHONY: clean
 clean:
-	rm -rf *.o *.elf *.bin *.out .gdb_history
+	rm -rf *.o *.elf *.bin *.hex *.out .gdb_history
