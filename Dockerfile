@@ -42,7 +42,8 @@ RUN apt-get install --no-install-recommends -y \
   zsh \
   xxd \
   strace \
-  man
+  man \
+  unminimize
 
 RUN yes | unminimize
 
